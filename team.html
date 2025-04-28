@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Наша команда юристів та адвокатів – професіонали з багаторічним досвідом у цивільному, сімейному та корпоративному праві." />
+  <meta name="keywords" content="команда юристів, адвокати, юридична допомога, цивільне право, сімейне право, корпоративне право" />
+  <meta name="author" content="Юридична фірма" />
+  <title>Наша команда</title>
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-left">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="desktop">
+          <a href="index.html">Головна</a>
+          <a href="company.html">Компанія</a>
+          <a href="services.html">Послуги</a>
+          <a href="team.html" class="active">Команда</a>
+          <a href="#contact" class="btn contact-btn">Зв'язатись</a>
+        </nav>
+      </div>
+
+      <nav class="mobile" id="mobileNav">
+        <a href="index.html">Головна</a>
+        <a href="company.html">Компанія</a>
+        <a href="services.html">Послуги</a>
+        <a href="team.html" class="active">Команда</a>
+        <a href="#contact" class="btn contact-btn">Зв'язатись</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>    
+
+    <section id="team" class="container">
+      <h2 class="section-title">Наша команда</h2>
+      <p class="section-subtitle">Досвідчені юристи та адвокати</p>
+
+      <div class="team-list">
+        <!-- Цивільне право -->
+        <div class="team-member card">
+          <img src="images/team1.jpg" alt="Юрист - Цивільне право">
+          <h3>Іван Мельник</h3>
+          <p><strong>Посада:</strong> Юрист</p>
+          <p><strong>Освіта:</strong> Київський національний університет ім. Тараса Шевченка</p>
+          <p><strong>Досвід:</strong> 10 років</p>
+          <span class="specialization">Цивільне право</span>
+          <p class="member-description">Спеціалізується на вирішенні складних цивільних спорів та захисті прав клієнтів у суді.</p>
+        </div>
+
+        <!-- Сімейне право -->
+        <div class="team-member card">
+          <img src="images/team2.jpg" alt="Адвокат - Сімейне право">
+          <h3>Олена Манойленко</h3>
+          <p><strong>Посада:</strong> Адвокат</p>
+          <p><strong>Освіта:</strong> Національний університет "Одеська юридична академія"</p>
+          <p><strong>Досвід:</strong> 8 років</p>
+          <span class="specialization">Сімейне право</span>
+          <p class="member-description">Професіонал у сфері розлучень, поділу майна та вирішення питань опіки над дітьми.</p>
+        </div>
+
+        <!-- Корпоративне право -->
+        <div class="team-member card">
+          <img src="images/team3.jpg" alt="Юрист - Корпоративне право">
+          <h3>Андрій Логінов</h3>
+          <p><strong>Посада:</strong> Юрист</p>
+          <p><strong>Освіта:</strong> Львівський національний університет ім. Івана Франка</p>
+          <p><strong>Досвід:</strong> 12 років</p>
+          <span class="specialization">Корпоративне право</span>
+          <p class="member-description">Надає повний юридичний супровід бізнесу, включно зі створенням компаній та вирішенням корпоративних спорів.</p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="about-values">
+      <div class="container">
+        <h2>Наші цінності</h2>
+        <ul>
+          <li>Професіоналізм і постійне вдосконалення знань</li>
+          <li>Конфіденційність і повага до кожного клієнта</li>
+          <li>Результативність і чесність у роботі</li>
+        </ul>
+      </div>
+    </aside>
+    
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Контакти</h3>
+          <p>Телефон: +380571442679</p>
+          <p>Email: LegalExpert@gmail.com</p>
+          <p>Адреса: Київ, вул. Юридична 1</p>
+        </div>
+        <div class="footer-section">
+          <h3>Ми на карті</h3>
+          <iframe src="https://www.google.com/maps?q=Київ,вул.+Юридична+1&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer-section">
+          <h3>Залишити запит</h3>
+          <form onsubmit="return validateForm()">
+            <div class="form-group">
+              <label for="name">Ім'я</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" pattern="\d{10}" title="Введіть 10 цифр" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" pattern=".+@gmail\.com" title="Має закінчуватись на @gmail.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Повідомлення</label>
+              <textarea id="message" required></textarea>
+            </div>
+            <button type="submit">Надіслати</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 LegalExpert. Усі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileNav');
+      menu.classList.toggle('show');
+    }
+
+    function validateForm() {
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !phone || !email || !message) {
+        alert('Будь ласка, заповніть всі поля форми.');
+        return false;
+      }
+
+      const phonePattern = /^\d{10}$/;
+      if (!phonePattern.test(phone)) {
+        alert('Введіть правильний номер телефону (10 цифр).');
+        return false;
+      }
+
+      const emailPattern = /^[^\s@]+@gmail\.com$/;
+      if (!emailPattern.test(email)) {
+        alert('Email має закінчуватись на @gmail.com');
+        return false;
+      }
+
+      alert('Ваш запит успішно надіслано!');
+      return true;
+    }
+  </script>
+
+</body>
+</html>

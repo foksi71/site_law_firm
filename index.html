@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Професійна юридична допомога для фізичних та юридичних осіб. Цивільне, сімейне, корпоративне право." />
+  <meta name="keywords" content="юридична фірма, адвокат, юрист, консультація, цивільне право, корпоративне право, розлучення" />
+  <meta name="author" content="Юридична фірма" />
+  <title>Юридична фірма</title>
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <body>
+    <div class="navbar">
+      <div class="container navbar-container">
+        <div class="navbar-left">
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="desktop">
+            <a href="index.html" class="active">Головна</a>
+            <a href="company.html">Компанія</a>
+            <a href="services.html">Послуги</a>
+            <a href="team.html">Команда</a>
+            <a href="#contact" class="btn contact-btn">Зв'язатись</a>
+          </nav>
+        </div>
+      
+        <nav class="mobile" id="mobileNav">
+          <a href="index.html" class="active">Головна</a>
+          <a href="company.html">Компанія</a>
+          <a href="services.html">Послуги</a>
+          <a href="team.html">Команда</a>
+          <a href="#contact" class="btn contact-btn">Зв'язатись</a>
+        </nav>
+      
+        <!-- <div class="navbar-right">
+          <button class="dark-mode-toggle" title="Змінити тему">🌙</button>
+        </div> -->
+      </div>
+    </div>
+
+    <main>
+      <header class="header">
+        <div class="container">
+          <h1 class="title">Вітаємо Вас на сайті Юридичної фірми "LegalExpert"!</h1>
+          <p class="subtitle">Наша юридична фірма пропонує якісні юридичні послуги – повний комплекс обслуговування у сфері цивільного, сімейного та корпоративного права.</p>
+        </div>
+      </header>
+  
+      <section id="services" class="services">
+        <div class="container">
+          <h2 class="section-title">Правова допомога, що надається</h2>
+          <div class="services-list">
+            <article class="service">
+              <h3>Цивільне право</h3>
+              <p>Консультації, супровід у суді, спадкування, ДТП, нерухомість, земля.</p>
+            </article>
+            <article class="service">
+              <h3>Сімейне право</h3>
+              <p>Розлучення, аліменти, поділ майна, усиновлення, опіка – з усім цим теж допоможемо!</p>
+            </article>
+            <article class="service">
+              <h3>Корпоративне право</h3>
+              <p>Юридичний супровід бізнесу, реєстрація підприємств, договори, представництво.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+  
+      <section id="about" class="cards">
+        <div class="container">
+          <h2 class="section-title">Наші послуги та команда</h2>
+          <div class="cards-list">
+            <a class="card" href="company.html">
+              <img src="images/company.jpeg" alt="Про компанію">
+              <h3>Про компанію</h3>
+              <p>Досвідчені юристи з понад 10-річним стажем допомагають клієнтам щодня.</p>
+            </a>
+            <a class="card" href="services.html">
+              <img src="images/services.jpeg" alt="Послуги">
+              <h3>Послуги</h3>
+              <p>Консультації, складання документів, представництво в суді та держорганах.</p>
+            </a>
+            <a class="card" href="team.html">
+              <img src="images/team.jpeg" alt="Команда">
+              <h3>Команда</h3>
+              <p>Адвокати-практики, які виграли сотні справ і знають, як досягти результату.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="reasons">
+        <div class="container">
+          <h2 class="section-title">Чому обирають нас</h2>
+          <ul class="reasons-list">
+            <li>✔️ Більше 10 років досвіду у сфері права</li>
+            <li>✔️ Індивідуальний підхід до кожного клієнта</li>
+            <li>✔️ Прозорість у ціноутворенні та гарантія якості</li>
+            <li>✔️ Супровід від консультації до повної реалізації правового захисту</li>
+            <li>✔️ Зручне розташування офісу в центрі Києва</li>
+          </ul>
+        </div>
+      </section>
+  
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <h2 class="section-title">Тарифи на послуги</h2>
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Послуга</th>
+                <th>Ціна (грн)</th>
+                <th>Опис</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Консультація</td>
+                <td>500</td>
+                <td>Оцінка справи та рекомендації щодо подальших дій</td>
+              </tr>
+              <tr>
+                <td>Складання договору</td>
+                <td>1500</td>
+                <td>Професійне оформлення договорів з урахуванням юридичних нюансів</td>
+              </tr>
+              <tr>
+                <td>Супровід у суді</td>
+                <td>від 3000</td>
+                <td>Повний супровід справи: підготовка, представництво, захист</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+  
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <h2 class="section-title">Відгуки клієнтів</h2>
+          <div class="review-grid">
+            <div class="review-card">
+              <p class="review-field"><strong>Сфера:</strong> Цивільне право</p>
+              <p class="review-text">"Допомогли у справі про ДТП. Дякую, виграли суд."</p>
+              <p class="review-author">Ігор С., водій</p>
+            </div>
+            <div class="review-card">
+              <p class="review-field"><strong>Сфера:</strong> Сімейне право</p>
+              <p class="review-text">"Дуже вдячна за допомогу при розлученні та оформленні опіки."</p>
+              <p class="review-author">Марина К., підприємниця</p>
+            </div>
+            <div class="review-card">
+              <p class="review-field"><strong>Сфера:</strong> Корпоративне право</p>
+              <p class="review-text">"Фахово супроводжували нашу компанію при реєстрації. Все чітко."</p>
+              <p class="review-author">Олександр Б., власник ТОВ</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Контакти</h3>
+          <p>Телефон: +380571442679</p>
+          <p>Email: LegalExpert@gmail.com</p>
+          <p>Адреса: Київ, вул. Юридична 1</p>
+        </div>
+        <div class="footer-section">
+          <h3>Ми на карті</h3>
+          <iframe src="https://www.google.com/maps?q=Київ,вул.+Юридична+1&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer-section">
+          <h3>Залишити запит</h3>
+          <form onsubmit="return validateForm()">
+            <div class="form-group">
+              <label for="name">Ім'я</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" pattern="\d{10}" title="Введіть 10 цифр" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" pattern=".+@gmail\.com" title="Має закінчуватись на @gmail.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Повідомлення</label>
+              <textarea id="message" required></textarea>
+            </div>
+            <button type="submit">Надіслати</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 LegalExpert. Усі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Темна тема
+    // const toggle = document.querySelector('.dark-mode-toggle');
+    // toggle?.addEventListener('click', () => {
+    //   document.body.classList.toggle('dark-mode');
+    // });
+  
+    // Мобільне меню
+    function toggleMenu() {
+      const menu = document.getElementById('mobileNav');
+      menu.classList.toggle('show');
+    }
+  
+    // Валідація форми
+    function validateForm() {
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+  
+      if (!name || !phone || !email || !message) {
+        alert('Будь ласка, заповніть всі поля форми.');
+        return false;
+      }
+  
+      const phonePattern = /^\d{10}$/;
+      if (!phonePattern.test(phone)) {
+        alert('Введіть правильний номер телефону (10 цифр).');
+        return false;
+      }
+  
+      const emailPattern = /^[^\s@]+@gmail\.com$/;
+      if (!emailPattern.test(email)) {
+        alert('Email має закінчуватись на @gmail.com');
+        return false;
+      }
+  
+      alert('Ваш запит успішно надіслано!');
+      return true;
+    }
+  
+    // Навігація при скролі
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar nav a');
+  
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+  
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>  
+</head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
