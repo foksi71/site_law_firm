@@ -20,6 +20,29 @@ body {
   padding-top: 60px;
 }
 
+a.card {
+  display: block;
+  width: 200px;
+  height: 120px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 80px;
+
+  /* Ось ця частина створює плавну анімацію */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.card:hover {
+  transform: scale(1.05); /* трохи збільшується */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* глибша тінь */
+}
+
 /* Контейнер */
 .container {
   max-width: 1200px;
