@@ -537,6 +537,13 @@ button:hover {
     align-items: center;
   }
 
+  .services-list, .cards-list {
+    justify-content: flex-start; /* або space-between */
+    gap: 10px; /* необов’язково зменшити для мобілок */
+    padding: 0 10px; /* щоб не торкалося країв екрана */
+  }
+}
+  
   .service, .article.service, .card {
     flex: 1 1 100%; /* Задає 100% ширини для елементів */
     max-width: 100%; /* Забезпечує, щоб елементи не перевищували 100% ширини */
