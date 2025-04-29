@@ -577,11 +577,11 @@ button:hover {
   }
 
   .about-values h2 {
-    font-size: 1.25rem; /* Зменшення розміру заголовка на мобільних */
+/*     font-size: 1.25rem; /* Зменшення розміру заголовка на мобільних */ */
   }
 
   .about-values li {
-    font-size: 1rem; /* Зменшення шрифту на мобільних */
+/*     font-size: 1rem; /* Зменшення шрифту на мобільних */ */
   }
 } */
 
@@ -612,7 +612,7 @@ button:hover {
   /* Адаптуємо бічну панель */
   .sidebar {
     max-width: 100%;
-    margin: 0 auto 20px; /* Виправлено зайвий "auto" */
+    margin: 0 auto 20px auto; /* Виправлено зайвий "auto" */
   }
 
   .sidebar-title {
@@ -648,3 +648,10 @@ button:hover {
     font-size: 1rem; /* Зменшення шрифту на мобільних */
   }
 }
+
+
+
+
+
+
+
