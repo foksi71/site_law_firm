@@ -21,21 +21,13 @@ body {
 }
 
 a.card {
-  display: block;
-  width: 200px;
-  height: 120px;
+  flex: 1 1 300px;
+  max-width: 360px;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  color: black;
   padding: 20px;
-  font-family: sans-serif;
-  text-align: center;
-  line-height: 80px;
-
-  /* Ось ця частина створює плавну анімацію */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 48px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
 }
 
 a.card:hover {
