@@ -20,19 +20,16 @@ body {
   padding-top: 60px;
 }
 
-article.service {
-  flex: 1 1 300px;
-  max-width: 360px;
-  background: #fff0f0;
+.article.service p,
+.article.service .text {
+  width: 100%;
+  display: block;
   padding: 20px;
+  background: #fff0f0;
   border-radius: 24px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
-}
-
-article.service:hover {
-  transform: scale(1.03); /* трохи збільшується */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* глибша тінь */
+  box-sizing: border-box; /* ОБОВ’ЯЗКОВО для контролю ширини */
 }
 
 a.card {
@@ -529,40 +526,49 @@ button:hover {
   margin-bottom: 8px; /* Відступ між елементами списку */
 }
 
-
 /* Адаптивність */
 @media (max-width: 768px) {
-  .services-list, .cards-list, .article.service, .footer-content {
+  /* Контейнери з картками */
+  .services-list,
+  .cards-list,
+  .footer-content {
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start; /* або center / space-between */
+    gap: 10px;
+    padding: 0 10px; /* Щоб не торкались країв */
   }
 
-  .services-list, .cards-list {
-    justify-content: flex-start; /* або space-between */
-    gap: 10px; /* необов’язково зменшити для мобілок */
-    padding: 0 10px; /* щоб не торкалося країв екрана */
-  }
-}
-  
-  .service, .article.service, .card {
-    flex: 1 1 100%; /* Задає 100% ширини для елементів */
-    max-width: 100%; /* Забезпечує, щоб елементи не перевищували 100% ширини */
+  /* Службові картки */
+  .service,
+  .card,
+  .article.service {
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Щоб padding не ламав ширину */
   }
 
-  /* Приховує навігацію для десктопу на мобільних */
+  /* Текст у картках */
+  .article.service p,
+  .article.service .text {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Навігація */
   .navbar-left nav.desktop {
     display: none;
   }
 
-  /* Відображає гамбургер-меню на мобільних */
   .hamburger {
     display: flex;
   }
 
-  /* Адаптуємо бічну панель */
+  /* Бічна панель */
   .sidebar {
     max-width: 100%;
-    margin: 0 auto 20px auto; /* Виправлено зайвий "auto" */
+    margin: 0 auto 20px auto;
   }
 
   .sidebar-title {
@@ -570,32 +576,32 @@ button:hover {
     text-align: center;
   }
 
-  /* Адаптуємо список елементів в бічній панелі */
   .sidebar-list {
     align-items: center;
-    padding-left: 0; /* Додаємо, щоб список не мав відступів зліва */
+    padding-left: 0;
   }
 
-  /* Адаптуємо блок "Про компанію" */
+  /* Блок "Про компанію" */
   .about-company-container {
     flex-direction: column;
     text-align: center;
   }
 
-  .about-text, .about-image {
-    flex: 1 1 100%; /* Задає 100% ширини для обох елементів */
+  .about-text,
+  .about-image {
+    flex: 1 1 100%;
+    width: 100%;
   }
 
   .about-values {
-    padding: 15px; /* Менші відступи на мобільних */
+    padding: 15px;
   }
 
   .about-values h2 {
-    font-size: 1.25rem; /* Зменшення розміру заголовка на мобільних */
+    font-size: 1.25rem;
   }
 
   .about-values li {
-    font-size: 1rem; /* Зменшення шрифту на мобільних */
+    font-size: 1rem;
   }
 }
-
