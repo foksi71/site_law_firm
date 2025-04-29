@@ -532,7 +532,7 @@ button:hover {
 
 /* Адаптивність */
 @media (max-width: 768px) {
-  .services-list, .cards-list, .footer-content {
+  .services-list, .cards-list, .article.service, .footer-content {
     flex-direction: column;
     align-items: center;
   }
