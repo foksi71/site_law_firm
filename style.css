@@ -531,63 +531,6 @@ button:hover {
 
 
 /* Адаптивність */
-/*   @media (max-width: 768px) {
-  .services-list, .cards-list, .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-  .service, .article.service, .card {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .navbar-left nav.desktop {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .sidebar {
-    max-width: 100%;
-    margin: 0 auto 20px auto;
-  }
-
-  .sidebar-title {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .sidebar-list {
-    align-items: center;
-  }
-
-  .about-company-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-text, .about-image {
-    flex: 1 1 100%;
-  }
-
-  .about-values {
-    padding: 15px; /* Менші відступи на мобільних */
-  }
-
-  .about-values h2 {
-/*     font-size: 1.25rem; /* Зменшення розміру заголовка на мобільних */ */
-  }
-
-  .about-values li {
-/*     font-size: 1rem; /* Зменшення шрифту на мобільних */ */
-  }
-} */
-
-
-
-/* Адаптивність */
 @media (max-width: 768px) {
   .services-list, .cards-list, .footer-content {
     flex-direction: column;
@@ -648,10 +591,4 @@ button:hover {
     font-size: 1rem; /* Зменшення шрифту на мобільних */
   }
 }
-
-
-
-
-
-
 
